@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>War</title>
+    <link href="./resources/css/style.css" type="text/css" rel="stylesheet"/>
+    <link rel="icon" href="./resources/images/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--  <link href="./resources/css/style.css" type="text/css" rel="stylesheet" />-->
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="" />
+      </div>
+    </header>
+    <div id="practice" stlye="font-size:2rem;"></div>
+    <div id="gameBoard" class="flex">
+      <div class="flexColumn">
+        <h1>War!</h1>
+        <h2 id="winner">Winner</h2>
+      <div id="end">
+        <h2>First Player has <span id="player1count"></span> cards.</h2>
+        <h2>Second Player has <span id="player2count"></span> cards.</h2>
+      </div>
+    </div>
+      <div class="flex">
+        <div id="firstPlayer" class="flexColumn player">
+          <h1>First Player</h1>
+          <div id="firstPlayerNumber" class="number">
+          </div>
+          <div id="firstPlayerSuit" class="suit flex">
+          </div> <!--closes first player-->
+          <h1 id="draw">Draw</h1>
+          <div id="secondPlayer" class="flexColumn player">
+            <h1>Second Player</h1>
+            <div id="secondPlayerNumber" class="number">
+            </div>
+            <div id="secondPlayerSuit" class="suit">
+            </div>
+          </div><!--closes second player-->
+        </div><!--closes card area-->
+      </div><!--closes gameboard-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./resources/js/script.js"></script>
+  </body>
+</html>
