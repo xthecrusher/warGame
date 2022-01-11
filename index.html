@@ -20,25 +20,50 @@
         <h1>War!</h1>
         <h2 id="winner">Winner</h2>
       <div id="end">
-        <h2>First Player has <span id="player1count"></span> cards.</h2>
-        <h2>Second Player has <span id="player2count"></span> cards.</h2>
+        <h2>Player has <span id="player1count"></span> cards.</h2>
+        <h2>Computer has <span id="player2count"></span> cards.</h2>
+      </div>
+      <div>
+        <h2 id="mathOptions" class="button">Math Options?</h2>
+          <div id="options" class="hidden">
+              <button id="compare">Compare</button><button id="arithmetic">Arithmetic</button>
+          </div>
+        <h2 id="math" class="hidden"><span id="add" class="button">ADD</span><span id="multiply" class="button">MULTIPLY</span><span id="subtract" class="button">SUBTRACT</span></h2>
+        <h2 id="integers" class="hidden" style="margin-left:1rem;">Integers?<span id="yes" class="button">YES</span><span id="no" class="button">NO</span></h2>
       </div>
     </div>
       <div class="flex">
-        <div id="firstPlayer" class="flexColumn player">
-          <h1>First Player</h1>
-          <div id="firstPlayerNumber" class="number">
+        <div id="player" class="flexColumn player">
+          <h1>Player</h1>
+          <div id="playerNumber" class="number">
           </div>
-          <div id="firstPlayerSuit" class="suit flex">
-          </div> <!--closes first player-->
+          <div id="playerSuit" class="suit flex">
+          </div>
+          <h2 id="one" class="button hidden">Winner</h2>
+        </div><!--closes player-->
+        <div class="flexColumn">
+          <p id="compareDirections" class="hidden">Click on the card that shows a greater amount.</p>
+          <p id="addDirections" class="hidden">Add the card amounts together.</p>
+          <p id="multiplyDirections" class="hidden">Multiply the card amounts together.</p>
+          <p id="subtractDirections" class="hidden">Player's card minus Computer's card</p>
+          <p id="integerDirections" class="hidden">Black suit is positive. Red suit is negative.</p>
+
+          <input class="hidden" id="playerAnswer" type="number" align="right" size="6">
+
+          <button class="hidden" id="submit">Check</button>
+
           <h1 id="draw">Draw</h1>
-          <div id="secondPlayer" class="flexColumn player">
-            <h1>Second Player</h1>
-            <div id="secondPlayerNumber" class="number">
+
+          </div>
+
+          <div id="computer" class="flexColumn player">
+            <h1>Computer</h1>
+            <div id="computerNumber" class="number">
             </div>
-            <div id="secondPlayerSuit" class="suit">
+            <div id="computerSuit" class="suit">
             </div>
-          </div><!--closes second player-->
+            <h2 id="two" class="button hidden">Winner</h2>
+          </div><!--closes computer-->
         </div><!--closes card area-->
       </div><!--closes gameboard-->
 
